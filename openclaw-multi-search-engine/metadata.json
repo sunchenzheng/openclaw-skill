@@ -1,0 +1,7 @@
+{
+  "name": "multi-search-engine",
+  "version": "2.0.2",
+  "description": "多引擎搜索 — 仅国内可用引擎（百度/必应国内/360/搜狗/头条），不依赖 Brave API Key，自动排除不稳定站点。",
+  "engines": 5,
+  "requires_api_key": false
+}

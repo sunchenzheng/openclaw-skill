@@ -1,0 +1,300 @@
+{
+  "schema_version": "1.0",
+  "description": "DaVinci Resolve 调色原子动作定义",
+  "actions": {
+    "color_wheel_adjust": {
+      "description": "调整颜色轮（暗部/中间调/亮部/整体偏移）",
+      "params": {
+        "wheel": {
+          "type": "string",
+          "enum": [
+            "lift",
+            "gamma",
+            "gain",
+            "offset"
+          ],
+          "description": "颜色轮位置"
+        },
+        "hue": {
+          "type": "number",
+          "range": [
+            -180,
+            180
+          ],
+          "description": "色相偏移（度）"
+        },
+        "saturation": {
+          "type": "number",
+          "range": [
+            0,
+            10
+          ],
+          "description": "饱和度倍数"
+        },
+        "luminance": {
+          "type": "number",
+          "range": [
+            -2,
+            2
+          ],
+          "description": "亮度调整量"
+        },
+        "node_index": {
+          "type": "integer",
+          "default": 1,
+          "description": "目标节点索引"
+        }
+      }
+    },
+    "curve_adjust": {
+      "description": "调整曲线编辑器",
+      "params": {
+        "curve_type": {
+          "type": "string",
+          "enum": [
+            "rgb",
+            "hue_vs_sat",
+            "hue_vs_hue",
+            "sat_vs_sat",
+            "luminance_vs_sat"
+          ],
+          "description": "曲线类型"
+        },
+        "points": {
+          "type": "array",
+          "description": "控制点列表 [{x, y, control_type}]",
+          "items": {
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            },
+            "control_type": {
+              "type": "string",
+              "enum": [
+                "smooth",
+                "linear",
+                "step"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "node_add": {
+      "description": "添加调色节点",
+      "params": {
+        "node_type": {
+          "type": "string",
+          "enum": [
+            "serial",
+            "parallel",
+            "layer",
+            "compound"
+          ],
+          "description": "节点类型（串行/并行/图层/复合）"
+        },
+        "name": {
+          "type": "string",
+          "description": "节点名称（可选）"
+        }
+      }
+    },
+    "node_connect": {
+      "description": "连接节点",
+      "params": {
+        "from_node": {
+          "type": "integer",
+          "description": "源节点索引"
+        },
+        "to_node": {
+          "type": "integer",
+          "description": "目标节点索引"
+        },
+        "connection_type": {
+          "type": "string",
+          "enum": [
+            "serial",
+            "parallel"
+          ]
+        }
+      }
+    },
+    "lut_apply": {
+      "description": "应用 LUT",
+      "params": {
+        "lut_name": {
+          "type": "string",
+          "description": "LUT 文件名或路径"
+        },
+        "node_index": {
+          "type": "integer",
+          "default": 1
+        }
+      }
+    },
+    "lut_remove": {
+      "description": "移除节点 LUT",
+      "params": {
+        "node_index": {
+          "type": "integer",
+          "default": 1
+        }
+      }
+    },
+    "power_window": {
+      "description": "应用 Power Window 遮罩",
+      "params": {
+        "shape": {
+          "type": "string",
+          "enum": [
+            "circle",
+            "rectangle",
+            "polygon",
+            "bezier"
+          ]
+        },
+        "points": {
+          "type": "array",
+          "description": "形状点坐标"
+        },
+        "invert": {
+          "type": "boolean",
+          "default": false
+        },
+        "feather": {
+          "type": "number",
+          "range": [
+            0,
+            100
+          ]
+        }
+      }
+    },
+    "magic_mask": {
+      "description": "Magic Mask 跟踪",
+      "params": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "create",
+            "track",
+            "refine",
+            "reset"
+          ]
+        },
+        "subject": {
+          "type": "string",
+          "enum": [
+            "face",
+            "body",
+            "object",
+            "custom"
+          ]
+        }
+      }
+    },
+    "node_reset": {
+      "description": "重置节点调色",
+      "params": {
+        "node_index": {
+          "type": "integer",
+          "default": 1
+        },
+        "scope": {
+          "type": "string",
+          "enum": [
+            "all",
+            "wheels",
+            "curves",
+            "keys",
+            "custom"
+          ]
+        }
+      }
+    },
+    "scope_read": {
+      "description": "读取示波器数据",
+      "params": {
+        "scope_type": {
+          "type": "string",
+          "enum": [
+            "waveform",
+            "rgb_parade",
+            "vectorscope",
+            "histogram"
+          ]
+        }
+      }
+    },
+    "project_load": {
+      "description": "加载项目/时间线",
+      "params": {
+        "project_name": {
+          "type": "string"
+        },
+        "timeline_name": {
+          "type": "string"
+        }
+      }
+    },
+    "timeline_nav": {
+      "description": "时间线导航",
+      "params": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "go_to_start",
+            "go_to_end",
+            "next_clip",
+            "prev_clip",
+            "go_to_timecode"
+          ]
+        },
+        "timecode": {
+          "type": "string",
+          "description": "时间码（TC 格式）"
+        }
+      }
+    },
+    "stabilize": {
+      "description": "稳定器",
+      "params": {
+        "enable": {
+          "type": "boolean"
+        }
+      }
+    },
+    "auto_color": {
+      "description": "自动调色（批量/单镜头）",
+      "params": {
+        "contrast": {
+          "type": "number",
+          "default": 1.2,
+          "description": "对比度倍数，1.0=不变，1.2=+20%"
+        },
+        "saturation": {
+          "type": "number",
+          "default": 1.1,
+          "description": "饱和度倍数，1.0=不变，1.1=+10%"
+        },
+        "lut_name": {
+          "type": "string",
+          "default": "Rec.709",
+          "description": "LUT 名称，留空则不应用 LUT"
+        },
+        "track_index": {
+          "type": "integer",
+          "default": 1,
+          "description": "视频轨道索引"
+        },
+        "batch_mode": {
+          "type": "boolean",
+          "default": true,
+          "description": "True=处理整条轨道所有镜头，False=只处理当前选中镜头"
+        }
+      }
+    }
+  }
+}

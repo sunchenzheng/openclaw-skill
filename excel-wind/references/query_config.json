@@ -1,0 +1,16 @@
+{
+  "formulas": [
+    {
+      "name": "茅台日线",
+      "formula": "=WSD(\"600519.SH\", \"close;open;high;low;volume;amount\", \"2026-01-01\", \"2026-04-03\", \"PriceAdj=F\")"
+    },
+    {
+      "name": "茅台估值",
+      "formula": "=WSS(\"600519.SH\", \"eps_basic;roe_avg;pb;pe_ttm;dividendyield;mkt_cap\", \"\")"
+    },
+    {
+      "name": "沪深300指数",
+      "formula": "=WSD(\"000300.SH\", \"close;volume;amount\", \"2026-01-01\", \"2026-04-03\", \"\")"
+    }
+  ]
+}

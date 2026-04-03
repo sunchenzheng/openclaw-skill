@@ -1,0 +1,54 @@
+{
+  "update_date": "2026-04-01",
+  "description": "题目截图收集状态追踪",
+  "total_questions": 176,
+  "new_added": 25,
+  "new_questions_range": "Q151-Q175",
+  "strategy": "P1=网络图片搜索优先, P2=视频题目帧, P3=视频解答帧(多帧)",
+  "collected": {
+    "questions_with_question_screenshot": 0,
+    "questions_with_answer_screenshot": 0,
+    "total_screenshots": 0
+  },
+  "by_difficulty": {
+    "*":      {"total": 17,  "screenshots": 0, "folder": "q001-q017"},
+    "**":     {"total": 39,  "screenshots": 0, "folder": "q018-q056"},
+    "***":    {"total": 61,  "screenshots": 0, "folder": "q057-q090"},    "note_2026-04-01": "增加7题(Q164-Q170)至54题",
+    "****":   {"total": 48,  "screenshots": 0, "folder": "q091-q117"},   "note_2026-04-01": "增加13题(Q151-Q163)至35题",
+    "*****":  {"total": 40,  "screenshots": 0, "folder": "q118-q150"}    "note_2026-04-01": "增加5题(Q171-Q175)至35题"
+  },
+  "pending": 176,
+  "failed": [],
+  "new_questions_needing_screenshots": [
+    {"id": "Q151", "difficulty": "****", "知识点": "将军饮马-菱形", "bv": "BV1Fv41147D5"},
+    {"id": "Q152", "difficulty": "****", "知识点": "将军饮马-费马点", "bv": "BV1Fv41147D5"},
+    {"id": "Q153", "difficulty": "****", "知识点": "将军饮马-造桥", "bv": "BV1HbHNzsERW"},
+    {"id": "Q154", "difficulty": "****", "知识点": "将军饮马-周长", "bv": "BV1HbHNzsERW"},
+    {"id": "Q155", "difficulty": "****", "知识点": "胡不归-系数", "bv": "BV19XzCBVEeo"},
+    {"id": "Q156", "difficulty": "****", "知识点": "胡不归-矩形", "bv": "BV19XzCBVEeo"},
+    {"id": "Q157", "difficulty": "****", "知识点": "阿氏圆-基本", "bv": "BV19XzCBVEeo"},
+    {"id": "Q158", "difficulty": "****", "知识点": "阿氏圆-内点", "bv": "BV1Fv41147D5"},
+    {"id": "Q159", "difficulty": "****", "知识点": "隐圆-直角", "bv": "BV1Gs4y1q7Zu"},
+    {"id": "Q160", "difficulty": "****", "知识点": "手拉手-等腰直角", "bv": "BV1YB4y197Nh"},
+    {"id": "Q161", "difficulty": "****", "知识点": "手拉手-旋转60", "bv": "BV1YB4y197Nh"},
+    {"id": "Q162", "difficulty": "****", "知识点": "面积最值", "bv": "BV1xf421177M"},
+    {"id": "Q163", "difficulty": "****", "知识点": "中点+平行", "bv": "BV1TaZRYXEPe"},
+    {"id": "Q164", "difficulty": "***", "知识点": "手拉手-等边共顶", "bv": "BV1zr421b7ZD"},
+    {"id": "Q165", "difficulty": "***", "知识点": "手拉手-角度", "bv": "BV1zr421b7ZD"},
+    {"id": "Q166", "difficulty": "***", "知识点": "相似-比例", "bv": "BV1upm7BEEqX"},
+    {"id": "Q167", "difficulty": "***", "知识点": "相似-射影", "bv": "BV1upm7BEEqX"},
+    {"id": "Q168", "difficulty": "***", "知识点": "倒角-内角和", "bv": "BV1CgXjYREtX"},
+    {"id": "Q169", "difficulty": "***", "知识点": "倒角-延长线", "bv": "BV1CgXjYREtX"},
+    {"id": "Q170", "difficulty": "***", "知识点": "中线+角平", "bv": "BV1TaZRYXEPe"},
+    {"id": "Q171", "difficulty": "*****", "知识点": "将军饮马-三动点", "bv": "BV1Fv41147D5"},
+    {"id": "Q172", "difficulty": "*****", "知识点": "胡不归-坐标", "bv": "BV1MW421A7Q9"},
+    {"id": "Q173", "difficulty": "*****", "知识点": "阿氏圆-圆上", "bv": "BV19XzCBVEeo"},
+    {"id": "Q174", "difficulty": "*****", "知识点": "瓜豆原理", "bv": "BV1Gs4y1q7Zu"},
+    {"id": "Q175", "difficulty": "*****", "知识点": "隐圆-对角线", "bv": "BV1Gs4y1q7Zu"}
+  ],
+  "priority_order": [
+    "P1: 网络图片搜索 (百度图片/小红书/微信公众号/学科网)",
+    "P2: 视频截图-题目完整展示帧",
+    "P3: 视频截图-解答完整展示帧(翻页则多帧)"
+  ]
+}

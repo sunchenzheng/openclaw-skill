@@ -1,0 +1,32 @@
+{
+  "name": "multi-search-engine",
+  "engines": [
+    {"name": "百度", "url": "https://www.baidu.com/s?wd={keyword}", "region": "cn", "status": "stable"},
+    {"name": "必应（国内）", "url": "https://cn.bing.com/search?q={keyword}&ensearch=0", "region": "cn", "status": "stable"},
+    {"name": "360搜索", "url": "https://www.so.com/s?q={keyword}", "region": "cn", "status": "stable"},
+    {"name": "搜狗", "url": "https://www.sogou.com/web?query={keyword}", "region": "cn", "status": "stable"},
+    {"name": "头条搜索", "url": "https://so.toutiao.com/search?keyword={keyword}", "region": "cn", "status": "stable"},
+    {"name": "微信搜索", "url": "https://wx.sogou.com/weixin?type=2&query={keyword}", "region": "cn", "status": "unstable"},
+    {"name": "集思录", "url": "https://www.jisilu.cn/explore/?keyword={keyword}", "region": "cn", "status": "unstable"}
+  ],
+  "excluded_sites": [
+    "zhihu.com",
+    "weibo.com",
+    "douban.com",
+    "twitter.com",
+    "x.com",
+    "reddit.com",
+    "youtube.com",
+    "google.com",
+    "google.com.hk",
+    "duckduckgo.com",
+    "bing.com (international)",
+    "yahoo.com",
+    "startpage.com",
+    "brave.com",
+    "ecosia.org",
+    "qwant.com",
+    "wolframalpha.com"
+  ],
+  "note": "本配置仅包含国内可稳定访问的搜索引擎。所有境外引擎已移除。"
+}

@@ -1,0 +1,115 @@
+{
+  "update_date": "2026-03-31",
+  "体系化课程_Top3": [
+    {
+      "rank": 1,
+      "title": "初二数学-上册-下册-八年级数学（全册）",
+      "author": "数学微课帮",
+      "bvid": "BV1DJ411w7Th",
+      "url": "https://www.bilibili.com/video/BV1DJ411w7Th",
+      "play_count": "1912.6万",
+      "like_count": "32.5万",
+      "duration": "1368:51",
+      "duration_min": 1368,
+      "note": "完整初二数学上下册体系课程，22小时+，含三角形/全等/轴对称/勾股/平行四边形"
+    },
+    {
+      "rank": 2,
+      "title": "110分钟吃透50个中考数学必考几何模型",
+      "author": "亮亮巧解初中数学",
+      "bvid": "BV16VVnz3EsU",
+      "url": "https://www.bilibili.com/video/BV16VVnz3EsU",
+      "play_count": "86.2万",
+      "like_count": "4.9万",
+      "duration": "114:06",
+      "duration_min": 114,
+      "note": "点赞/播放比5.7%，50个中考几何模型，压轴题方向"
+    },
+    {
+      "rank": 3,
+      "title": "3小时肝完勾股定理【初二数学200讲】",
+      "author": "一点老师",
+      "bvid": "BV1BY411d7aq",
+      "url": "https://www.bilibili.com/video/BV1BY411d7aq",
+      "play_count": "150.8万",
+      "duration": "201:43",
+      "duration_min": 202,
+      "note": "勾股定理专题系统课，同系列BV1rR4y1R7Go（初二数学200讲·三角形，267.9万播放）"
+    }
+  ],
+  "单集型_Top5": [
+    {
+      "rank": 1,
+      "title": "标准答案中的辅助线是怎么做出来的？",
+      "author": "亮亮巧解初中数学",
+      "bvid": "BV1BCieBmENZ",
+      "url": "https://www.bilibili.com/video/BV1BCieBmENZ",
+      "play_count": "55.2万",
+      "like_count": "2.8万",
+      "duration": "22:04",
+      "like_ratio": "5.1%",
+      "note": "初中数学辅助线只有三种思路，极高实用价值"
+    },
+    {
+      "rank": 2,
+      "title": "中考冲刺最后5课：初中数学三角形与四边形",
+      "author": "亮亮巧解初中数学",
+      "bvid": "BV1udjbzxE6R",
+      "url": "https://www.bilibili.com/video/BV1udjbzxE6R",
+      "play_count": "23.0万",
+      "like_count": "8208",
+      "duration": "19:15",
+      "like_ratio": "3.6%",
+      "note": "中考几何终极复习，常规题稳拿20分"
+    },
+    {
+      "rank": 3,
+      "title": "中考数学几何辅助线系统专题·三线合一",
+      "author": "一数",
+      "bvid": "BV1QS4y1P74L",
+      "url": "https://www.bilibili.com/video/BV1QS4y1P74L",
+      "play_count": "87.3万",
+      "like_count": "3.8万",
+      "duration": "15:09",
+      "like_ratio": "4.4%",
+      "note": "等腰三角形三线合一构造思路，点赞效率极高"
+    },
+    {
+      "rank": 4,
+      "title": "一口气看完勾股定理的15个可视化证明！",
+      "author": "派蒙科普",
+      "bvid": "BV1wBUPY5ECg",
+      "url": "https://www.bilibili.com/video/BV1wBUPY5ECg",
+      "play_count": "27.2万",
+      "like_count": "1.1万",
+      "duration": "9:24",
+      "note": "动画演示，直观理解勾股定理本质"
+    },
+    {
+      "rank": 5,
+      "title": "考前救命视频！勾股定理最值问题就考这两类",
+      "author": "亮亮巧解初中数学",
+      "bvid": "BV14JXGBCEWd",
+      "url": "https://www.bilibili.com/video/BV14JXGBCEWd",
+      "play_count": "4.3万",
+      "like_count": "2745",
+      "duration": "6:25",
+      "like_ratio": "6.4%",
+      "note": "点赞/播放比最高（6.4%），压轴题专项突破"
+    }
+  ],
+  "timeline_bv1by411d7aq": {
+    "title": "3小时肝完勾股定理【初二数学200讲】",
+    "bvid": "BV1BY411d7aq",
+    "segments": [
+      {"start": "00:00", "end": "10:00", "content": "勾股定理基础（定义、公式）"},
+      {"start": "10:00", "end": "25:00", "content": "勾股定理三大常见题型"},
+      {"start": "25:00", "end": "45:00", "content": "勾股定理逆定理"},
+      {"start": "45:00", "end": "70:00", "content": "勾股定理与实际问题（应用题）"},
+      {"start": "70:00", "end": "100:00", "content": "勾股定理压轴题练习"},
+      {"start": "100:00", "end": "120:00", "content": "勾股定理拓展（翻折/旋转问题）"},
+      {"start": "120:00", "end": "180:00", "content": "综合提升+难点突破"},
+      {"start": "180:00", "end": "201:43", "content": "中考真题实战演练"}
+    ]
+  }
+}
